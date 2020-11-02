@@ -1,0 +1,147 @@
+<!-----------------------------------------USELESS SET UP STUFF----------------------------------------------->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lemon.INC</title>
+
+<!-----------------------------------------------LOGO STYLE---------------------------------------------------->    
+<style type="text/css">
+        #topright {
+            position: absolute;
+            right: 0;
+            top: -10;
+            display: block;
+            height: 125px;
+            width: 125px;
+            background: url(TRbanner.gif) no-repeat;
+            text-indent: -999em;
+            text-decoration: none;
+        }
+        #topleft {
+                position: absolute;
+                left: 0;
+                top: -10;
+                display: block;
+                height: 125px;
+                width: 125px;
+                background: url(TRbanner.gif) no-repeat;
+                text-indent: -999em;
+                text-decoration: none;
+            }
+        </style>
+</head>
+
+
+<!--------------------------------------THIS IS ALL FOR THE TABS AT THE TOP----------------------------------->
+
+<div class="tab">
+    <button class="tablinks" onclick="clickHandle(event, 'LEMON')">DOWNLOADABLES</button>
+    <button class="tablinks" onclick="clickHandle(event, 'LIME')">IN THE MAKING</button>
+    <button class="tablinks" onclick="clickHandle(event, 'ORANGE')">ABOUT</button>
+</div>
+
+<div id="LEMON" class="tabcontent">
+    <h3 style="color:yellow" align=center>HERE YOU CAN DOWNLOAD STUFF</h3>
+</div>
+
+<div id="LIME" class="tabcontent">
+    <h3 style="color:yellow" align=center>PROJECTS IN THE MAKING</h3>
+</div>
+
+<div id="ORANGE" class="tabcontent">
+    <h3 style="color:yellow" align=center>ABOUT OUR TEAM</h3>
+</div>
+
+<script>
+    function clickHandle(evt, animalName) {
+      let i, tabcontent, tablinks;
+    
+      // This is to clear the previous clicked content.
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+    
+      // Set the tab to be "active".
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+    
+      // Display the clicked tab and set it to active.
+      document.getElementById(animalName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+    </script>
+    <br>
+    <style>
+        /* Style the tab */
+        .tab {
+        overflow: hidden;
+        border: 1px solid yellow;
+        background-color: yellow;
+        }
+
+        /* Style the buttons inside the tab */
+        .tab button {
+        background-color: inherit;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        transition: 0.3s;
+        font-size: 17px;
+        }
+
+        /* Change background color of buttons on hover */
+        .tab button:hover {
+        background-color: yellowgreen;
+        }
+
+        /* Create an active/current tablink class */
+        .tab button.active {
+        background-color:green;
+        }
+
+        /* Style the tab content */
+        .tabcontent {
+        display: none;
+        padding: 6px 12px;
+        border: 1px solid yellowgreen;
+        border-top: none;
+        }
+    </style>
+
+
+
+
+<!--------------------------------------------------LOGO------------------------------------------------------>    
+
+<img id="topright" src="LEMON.png" title="company logo"></img>
+<img id="topleft" src="LEMON.png" title="company logo"></img>
+
+
+
+<!-----------------------------------------BACKGROUND STYLE + TEXT---------------------------------------------->
+<body style="background-color:green;">
+    <H1 style="color:yellow" align=center>
+        Lemon INC
+    </H1>
+    <h2 style="color:yellow" align=center>
+        No Slogan Not Sorry
+    </h2>
+    <br>
+    <p style="color:yellow;" align=center>
+    
+    </p>
+ <br>
+ <p style="color:yellow" align=center>
+     CONTACT US AT  <br>
+     EMAIL: No Email Not Sorry <br>
+     INSTAGRAM: No Instagram Not Sorry <br>
+ </p>
+</body>
+</html>
